@@ -348,6 +348,22 @@ hr{
   border-color: #00ffff; 
   box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
 }
+.project-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #f3f3f3;
+    color: rgb(5, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* dodatkowe zabezpieczenie */
+}
+
+.project-button:hover {
+    background-color: #6e5dce;
+    color: white; /* opcjonalnie zmiana koloru przy hover */
+}
 
  /* --- SEKCJA COURSES --- */
 .courses {
