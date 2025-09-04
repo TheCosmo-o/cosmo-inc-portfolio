@@ -271,9 +271,9 @@ hr{
   scroll-margin-top: 80px;
 }
 
- /* --- SEKCJA PROJEKTY --- */
+ /* --- SEKCJA PROJECTS --- */
 .projects {
-  background-color: #0a0a0a; /* takie samo jak sekcja kursów */
+  background-color: #0a0a0a; /* takie samo tło jak w courses */
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -284,7 +284,7 @@ hr{
   margin-bottom: 2rem;
 }
 
-/* Filtry */
+/* Filtry kategorii */
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -309,7 +309,7 @@ hr{
 }
 
 /* Grid projektów */
-.project-list {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -317,37 +317,44 @@ hr{
   margin: 0 auto;
 }
 
-/* Karty projektów (linki) */
-.project-card {
-  display: block; /* linki jako bloki */
-  background-color: #111; /* tło identyczne jak kursy */
-  border: 1px solid #222; /* obramowanie identyczne jak kursy */
-  border-radius: 15px;
+/* Pojedynczy projekt */
+.project-item {
+  display: block; /* aby cały element był linkiem */
+  background-color: #111; /* takie samo tło jak kursy */
+  border: 1px solid #222; /* obramówka */
   padding: 1.5rem;
+  border-radius: 15px;
   text-align: left;
-  text-decoration: none; /* usuwa podkreślenie */
-  color: inherit;
-  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: #00ffff; /* nagłówki w kolorze cyan */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
-}
-
-.project-card h3 {
+.project-item h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #00ffff;
 }
 
-.project-card p {
+.project-item p {
   color: #ccc;
   font-size: 1rem;
   margin: 0;
 }
 
+/* Hover */
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+  background-color: #1a1a1a;
+}
 
+/* Responsywność */
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
  /* --- SEKCJA COURSES --- */
 .courses {
