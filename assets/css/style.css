@@ -334,6 +334,22 @@ hr{
     color:black;
 }
 
+/* Ukrycie stylów linków w projektach */
+.project-item {
+    text-decoration: none; /* usuwa podkreślenie */
+    color: inherit; /* dziedziczy kolor tekstu z kontenera */
+    display: block; /* aby zachowało styl blokowy */
+}
+
+.project-item h3,
+.project-item p {
+    color: inherit; /* nagłówki i paragrafy też dziedziczą kolor */
+}
+
+.project-item:hover {
+    transform: scale(1.02); /* pozostaje efekt hover */
+}
+
  /* --- SEKCJA COURSES --- */
 .courses {
   background-color: #0a0a0a;
