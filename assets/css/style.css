@@ -273,7 +273,7 @@ hr{
 
  /* --- SEKCJA PROJEKTY --- */
 .projects {
-  background-color: #0a0a0a;
+  background-color: #0a0a0a; /* takie samo jak sekcja kursów */
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -317,18 +317,17 @@ hr{
   margin: 0 auto;
 }
 
-/* Karty projektów */
+/* Karty projektów (linki) */
 .project-card {
-  display: block;
-  background-color: #111;
-  border: 1px solid #222;
+  display: block; /* linki jako bloki */
+  background-color: #111; /* tło identyczne jak kursy */
+  border: 1px solid #222; /* obramowanie identyczne jak kursy */
   border-radius: 15px;
   padding: 1.5rem;
   text-align: left;
-  text-decoration: none;
+  text-decoration: none; /* usuwa podkreślenie */
   color: inherit;
   transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
 }
 
 .project-card:hover {
@@ -347,6 +346,7 @@ hr{
   font-size: 1rem;
   margin: 0;
 }
+
 
 
  /* --- SEKCJA COURSES --- */
