@@ -271,88 +271,83 @@ hr{
   scroll-margin-top: 80px;
 }
 
- /* --- Projekty --- */
+ /* --- SEKCJA PROJEKTY --- */
 .projects {
-    background-color: #0a0a0a;
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
+  background-color: #0a0a0a;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
 .projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 /* Filtry */
 .filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .filter-btn {
-    padding: 0.6rem 1.4rem;
-    border: 1px solid #00ffff80;
-    background-color: transparent;
-    color: #00ffff;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid #00ffff80;
+  background-color: transparent;
+  color: #00ffff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-    background-color: #00ffff30;
+  background-color: #00ffff30;
 }
 
 /* Grid projektów */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-/* Karta projektu */
-.project-item {
-    display: block;             /* link zachowuje się jak blok */
-    text-decoration: none;      /* usuwa podkreślenie linku */
-    color: inherit;             /* dziedziczy kolor */
-    cursor: pointer;            /* wskaźnik kliknięcia */
-    border: 1px solid #222;
-    border-radius: 15px;
-    background-color: #111;
-    transition: transform 0.3s, box-shadow 0.3s;
+/* Karty projektów */
+.project-card {
+  display: block;
+  background-color: #111;
+  border: 1px solid #222;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
-/* Kontener wewnętrzny (dla dzieci) */
-.project-item .project-inner {
-    padding: 1.5rem;
-    text-align: left;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
 }
 
-/* Efekt hover */
-.project-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #00ffff;
 }
 
-/* Tekst w projektach */
-.project-item h3 {
-    color: #00ffff;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+.project-card p {
+  color: #ccc;
+  font-size: 1rem;
+  margin: 0;
 }
 
-.project-item p {
-    color: #ccc;
-    font-size: 1rem;
-    margin: 0;
-}
 
  /* --- SEKCJA COURSES --- */
 .courses {
