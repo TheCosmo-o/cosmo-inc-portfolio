@@ -316,35 +316,22 @@ hr{
   margin: 0 auto;
 }
 
+/* --- Projekty: całe karty klikalne i bez stylów linków --- */
 .project-item {
-  background-color: #111;
-  border: 1px solid #222;
-  padding: 1.5rem;
-  border-radius: 15px;
-  text-align: left;
-  transition: transform 0.3s;
+    display: block;          /* zachowuje wygląd blokowy */
+    text-decoration: none;   /* usuwa podkreślenie linku */
+    color: inherit;          /* dziedziczy kolor z kontenera */
+    cursor: pointer;         /* pokazuje wskaźnik kliknięcia */
+    transition: transform 0.3s;
+}
+
+.project-item * {
+    color: inherit;          /* wszystkie dzieci dziedziczą kolor */
+    pointer-events: none;    /* dzieci nie blokują kliknięcia */
 }
 
 .project-item:hover {
-  transform: scale(1.02);
-}
-
-.project-button a{
-    text-decoration: none;
-    color:black;
-}
-
-.project-item {
-    display: block;       /* link zachowuje się jak blok */
-    text-decoration: none;/* usuwa podkreślenie */
-    color: inherit;       /* dziedziczy kolor tekstu */
-    cursor: pointer;      /* pokazuje, że to klikane */
-}
-
-/* upewniamy się, że wszystkie dzieci dziedziczą kolor i są klikane */
-.project-item * {
-    color: inherit;
-    pointer-events: none; /* dzieci nie blokują kliknięcia */
+    transform: scale(1.02);  /* efekt hover */
 }
 
  /* --- SEKCJA COURSES --- */
