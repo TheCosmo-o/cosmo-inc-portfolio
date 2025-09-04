@@ -334,20 +334,17 @@ hr{
     color:black;
 }
 
-/* Ukrycie stylów linków w projektach */
 .project-item {
-    text-decoration: none; /* usuwa podkreślenie */
-    color: inherit; /* dziedziczy kolor tekstu z kontenera */
-    display: block; /* aby zachowało styl blokowy */
+    display: block;       /* link zachowuje się jak blok */
+    text-decoration: none;/* usuwa podkreślenie */
+    color: inherit;       /* dziedziczy kolor tekstu */
+    cursor: pointer;      /* pokazuje, że to klikane */
 }
 
-.project-item h3,
-.project-item p {
-    color: inherit; /* nagłówki i paragrafy też dziedziczą kolor */
-}
-
-.project-item:hover {
-    transform: scale(1.02); /* pozostaje efekt hover */
+/* upewniamy się, że wszystkie dzieci dziedziczą kolor i są klikane */
+.project-item * {
+    color: inherit;
+    pointer-events: none; /* dzieci nie blokują kliknięcia */
 }
 
  /* --- SEKCJA COURSES --- */
